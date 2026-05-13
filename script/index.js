@@ -1,7 +1,7 @@
 //index.js
 
 // 스크롤 header 처리
-$(window).on('scroll', function(){
+/* $(window).on('scroll', function(){
     var scTop = $(this).scrollTop();
     var vh = $('body').height();
 
@@ -12,7 +12,7 @@ $(window).on('scroll', function(){
     } else {
         $('header').removeClass('on');
     }
-});
+}); */
 
 $(function(){
     //main text effect

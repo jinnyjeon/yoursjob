@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* 고객센터 - contact.css */
+
+/* 서브페이지 header 디자인 변경 */
+header {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+header nav {
+    position: static;
+    float: right;
+    margin-top: 30px;
+    transform: none;
+}
+
+header .contact {
+    display: none;
+}
+
+/* 각 페이지 상단 이미지 */
+section.sub-top {
+    background-image: url(../images/sub-top-bg.png);
+}
+
+/* Section styles */
+
+section.content {
+    /* background-color: lightgoldenrodyellow; */
+}
+
+section.content .inbox {
+    width: 1200px;
+    margin: 0 auto;
+}
+section.content .company {
+    padding: 0 100px;
+    margin-bottom: 60px;
+}
+
+section.content .company .title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+section.content .company .info {
+    display: flex;
+    gap: 5%;
+}
+section.content .company .info > div {
+    padding-top: 24px;
+
+    position: relative; /* 가상요소 기준! */
+}
+section.content .company .info > div::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 6px;
+    background-color: var(--color-secondary);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+section.content .company .info > div:first-child {
+    margin-right: 5%;
+}
+
+section.content .company .info > div h4 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 20px;
+}
+section.content .company .info > div li {
+    margin-bottom: 12px;
+}
+section.content .company .info > div li:last-child {
+    margin-bottom: 0;
+}
+section.content .company .info > div li p {
+    display: inline-block;
+    vertical-align: middle;
+
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #555;
+}
+section.content .company .info > div li.address p {
+    vertical-align: top;
+}
+section.content .company .info > div li p:first-child {
+    margin-right: 10px;
+    font-weight: 500;
+}
+section.content .company .info > div li p:last-child {
+    color: #777;
+}
+
+
+
+section.content .map {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 6px #d9d9d9;
+}
+section.content .map img {
+    width: 100%;
+    
+}

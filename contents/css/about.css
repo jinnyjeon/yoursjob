@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* 평생교육원 소개 - about.css */
+
+/* 서브페이지 header 디자인 변경 */
+header {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+header nav {
+    position: static;
+    float: right;
+    margin-top: 30px;
+    transform: none;
+}
+header .contact {
+    display: none;
+}
+
+/* 각 페이지 상단 이미지 */
+section.sub-top {
+    background-image: url(../images/sub-top-bg.png);
+}
+
+
+/* Section styles */
+
+section.content {
+    /* background-color: lightgoldenrodyellow; */
+}
+
+section.content .inbox {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 5%;
+}
+
+section.content .txt-box {
+    width: 60%;
+    /* margin-top: 50px; */
+}
+section.content .txt-box h3 {
+    color: #222;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+section.content .txt-box p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--color-gray);
+    line-height: 1.4;
+    margin-bottom: 16px;
+    letter-spacing: -0.4px;
+    word-break: keep-all;
+}
+
+
+section.content .txt-box p.greeting {
+    font-size: 1.5rem;
+    margin-bottom: 32px;
+    font-weight: 500;
+    color: #222;
+}
+
+
+section.content .img-box {
+    width: 35%;
+}
+
+section.content .img-box img {
+    width: 100%;
+}

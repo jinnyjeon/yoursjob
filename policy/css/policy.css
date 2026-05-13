@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* 공통 스타일: 이용약관 및 개인정보처리방침 페이지 */
+
+
+/* 서브페이지 header 디자인 변경 */
+header {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+header nav {
+    position: static;
+    float: right;
+    margin-top: 30px;
+    transform: none;
+}
+
+header .contact {
+    display: none;
+}
+
+
+
+section.policy {
+    background-color: var(--color-secondary);
+    padding-top: 100px;
+}
+
+/* 상단 영역: 약관 및 정책 공통 */
+section.policy .policy-title {
+    text-align: center;
+    padding: 60px 0;
+    /* background-color: #f5f7fa; */
+}
+
+section.policy .policy-title .en-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
+
+section.policy .policy-title .ko-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-top: 8px;
+}
+
+/* 본문 영역: 약관 및 정책 공통 */
+section.policy .policy-content {
+    background-color: #f5f7fa;
+}
+section.policy .policy-content .inbox {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px 100px;
+    line-height: 1.7;
+}
+
+section.policy .policy-content h3 {
+    margin-top: 32px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-text, #1a1a1a);
+}
+
+section.policy .policy-content p {
+    margin-top: 12px;
+    font-size: 1rem;
+    color: var(--color-gray, #333);
+    word-break: keep-all;
+}
+
+section.policy .policy-content ul {
+    margin-top: 12px;
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+section.policy .policy-content ul li {
+    margin-bottom: 6px;
+}
+
+

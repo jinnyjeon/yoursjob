@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/* 과정 상세페이지 */
+
+body {
+    background-color: #fff;
+    background-color: var(--color-secondary);
+}
+
+/* 서브페이지 header 디자인 변경 */
+header {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+header nav {
+    position: static;
+    float: right;
+    margin-top: 30px;
+    transform: none;
+}
+
+header .contact {
+    display: none;
+}
+
+/* 상단 영역 */
+section.course-detail {
+    padding-top: 100px;
+}
+
+section.course-detail .course-title {
+    padding: 60px 0;
+    text-align: center;
+}
+
+section.course-detail .course-title .category {
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 2rem;
+    margin-bottom: 16px;
+}
+section.course-detail .course-title .en-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1.4px;
+}
+
+section.course-detail .course-title .ko-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    margin-top: 8px;
+}
+
+/* 본문 영역 */
+
+section.course-detail .course-content {
+    text-align: center;
+    background-color: #f5f7fa;
+    padding: 80px 0 100px;
+}
+section.course-detail .course-content .inbox {
+    max-width: 960px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+section.course-detail .course-content img {
+    width: 100%;
+    margin-bottom: 60px;
+}
+section.course-detail .course-content .btngrp {}
+section.course-detail .course-content .btngrp a {
+    font-size: 1.2rem;
+}
+section.course-detail .course-content .btngrp a.consult {
+    margin-right: 8px;
+}
+
+
+/* 수강상담 팝업 css */
+#modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    z-index: 10000;
+
+    display: none;
+}
+
+.popup {
+    width: 36%;
+    max-width: 500px;
+    background-color: var(--color-secondary);
+    border-radius: 12px;
+    overflow: hidden;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+.popup .cont {
+    padding: 40px;
+
+    background-color: rgb(255, 255, 255);
+    color: #333;
+}
+
+.popup .cont p:first-child {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.popup .cont p:last-child {
+    font-size: 1.125rem;
+    color: #444;
+}
+
+.popup .cont p:last-child span {
+    font-weight: 500;
+}
+
+.popup .cont p strong {
+    font-weight: 700;
+}
+
+.popup .close {
+    background-color: transparent;
+    border: none;
+    font-size: 1.125rem;
+    color: rgb(255, 255, 255);
+    width: 100%;
+
+    padding: 15px 0;
+    cursor: pointer;
+}
+

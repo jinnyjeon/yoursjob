@@ -1,7 +1,7 @@
 //detail.js
 
 $(function(){
-    $('.btn a').on('click', function(e){
+    $('.consult').on('click', function(e){
         e.preventDefault();
 
         $('#modal').show();

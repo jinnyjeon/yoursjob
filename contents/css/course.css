@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+/* 교육과정 - course.css */
+
+/* 서브페이지 header 디자인 변경 */
+header {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+header nav {
+    position: static;
+    float: right;
+    margin-top: 30px;
+    transform: none;
+}
+
+header .contact {
+    display: none;
+}
+
+/* 각 페이지 상단 이미지 */
+section.sub-top {
+    background-image: url(../images/sub-top-bg.png);
+}
+
+
+
+/* Section styles */
+section.content {
+    /* background-color: lightgoldenrodyellow; */
+}
+
+/* article - 수업안내 */
+article.con-box1 {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+
+article.con-box1 .top {
+    font-size: 2.2rem;
+    line-height: 1.5;
+    border-bottom: 1px solid var(--color-secondary);
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+article.con-box1 .top::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 24px;
+    background-image: url(../images/deco-diamond.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -13px;
+}
+
+article.con-box1 .top span {
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+
+
+/* 스텝박스 공통 */
+
+article.con-box1 .step-box>div~div {
+    border-top: 1px solid #DDD;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+article.con-box1 .step-box>div h4 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+}
+
+article.con-box1 .step-box>div h4 span {
+    font-size: 4rem;
+    color: var(--color-secondary);
+    display: block;
+    margin-bottom: 8px;
+}
+
+article.con-box1 .step-box>div p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: var(--color-text-gray);
+}
+
+article.con-box1 .step-box>div p span {
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+
+article.con-box1 .step-box>div .zoom-link {
+    margin-top: 40px;
+}
+
+article.con-box1 .zoom-link li {
+    display: inline-block;
+    margin-right: 24px;
+}
+article.con-box1 .zoom-link li img {
+    display: block;
+}
+
+
+/* article - 교육과정 */
+article.con-box2 .art-title {
+    font-size: 2.2rem;
+}
+
+
+section.content .tab-content {}
+
+.tab-content li {
+    padding: 60px 0;
+    border-bottom: 1px solid #DDD;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.tab-content li .thumbnail {
+    width: 40%;
+    max-width: 640px;
+}
+
+.tab-content li .thumbnail img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.tab-content li .course-info {
+    width: calc(60% - 80px);
+}
+
+.tab-content li .course-info .category {
+    font-size: 1rem;
+    border: 1px solid var(--color-secondary);
+    padding: 8px 18px;
+    display: inline-block;
+    border-radius: 50px;
+    color: var(--color-secondary);
+    margin-bottom: 16px;
+}
+
+.tab-content li .course-info .title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.tab-content li .course-info .title a:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
+.tab-content li .course-info .des {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--color-text-gray);
+    margin-bottom: 48px;
+    word-break: keep-all;
+}
+
+.tab-content li .course-info .meta p {
+    display: inline-block;
+    font-size: 1.25rem;
+    margin-right: 16px;
+    line-height: 1.5;
+}
+
+/* .tab-content li .course-info .meta p:first-child {
+    padding-right: 24px;
+    position: relative;
+}
+
+.tab-content li .course-info .meta p:first-child::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 20px;
+    background-color: #BBB;
+
+    position: absolute;
+    right: 0;
+    top: 5px;
+} */
+.tab-content li .course-info .meta p~p {
+    padding-left: 16px;
+    position: relative;
+}
+.tab-content li .course-info .meta p~p::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 20px;
+    background-color: #BBB;
+
+    position: absolute;
+    left: -2px;
+    top: 5px;
+}
+
+
+.tab-content li .course-info .meta p b {
+    margin-right: 8px;
+    font-weight: 700;
+}

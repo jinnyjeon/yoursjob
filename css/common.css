@@ -27,6 +27,7 @@
   --font-family-base: 'Pretendard', sans-serif;
   --max-width: 1280px;
 }
+
 /* --wide-width: 1620px; 전체너비에서 양쪽 150px 여백 사용 */
 
 body {
@@ -55,87 +56,61 @@ body {
   display: inline-block;
   padding: 1rem 2.4rem;
   border-radius: 0.6rem;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
   color: var(--color-light);
   font-size: 1rem;
 }
 
+
 /* 서브페이지 섹션 공통 사항 */
 
 /* 서브 상단(.sub-top) 공통 디자인*/
+section.sub-top {
+  width: 100%;
+  height: 460px;
+  background-color: var(--color-secondary);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  /* background-image는 각 페이지 css에서! */
+  position: relative;
+}
 
-/* page-title 너비는 header에 맞춰 동일하게 설정 */
 section.sub-top .page-title {
-  width: 86%;
-  max-width: 1620px;
-  margin: 0 auto;
-  /* padding: 100px 0; */
-  padding: 80px 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+section.sub-top .page-title .ko-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin-bottom: 8px;
 }
 
 section.sub-top .page-title .en-title {
   font-family: "Alexandria", sans-serif;
   font-size: 1.25rem;
-  font-weight: 700;
-  /* margin-bottom: 24px; */
-  margin-bottom: 16px;
-  color: var(--color-secondary);
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
-section.sub-top .page-title .ko-title {
-  /* font-size: 3.2rem; */
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: 0.1rem;
-}
 
-section.sub-top .page-des {
-  width: 100%;
-  /* height: 360px; */
-  height: 300px;
 
-  position: relative;
-}
-
-section.sub-top .page-des::before {
-  content: "";
-  display: block;
-
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
-section.sub-top .page-des p {
-  width: 86%;
-  max-width: 1620px;
-
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 25%;
-
-  /* font-size: 2.2rem; */
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 1.5;
-  color: #fff;
-}
 
 
 /* Content 섹션 공통 너비 설정 */
 section.content {
-  /* width: 100%;
-  padding: 0 150px; 
-  box-sizing: border-box; */
 
   width: 90%;
   max-width: 1620px;
   /* 양쪽 여백 150px 고려 */
   margin: 140px auto 160px;
 
-  /* background-color: lightgoldenrodyellow;
-  outline: 1px solid red; */
+  /* background-color: lightgoldenrodyellow; */
 }

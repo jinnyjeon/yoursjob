@@ -403,10 +403,15 @@ article.course .content .course-list .course-card {
     color: #888;
     display: inline-block;
     font-size: 1rem;
+    padding-left: 24px;
 }
 
 .course-card .card-body .info p:first-child {
     margin-right: 24px;
+    background: url(../images/index/icon1.png) no-repeat left;
+}
+.course-card .card-body .info p:last-child {
+    background: url(../images/index/icon2.png) no-repeat left;
 }
 
 
