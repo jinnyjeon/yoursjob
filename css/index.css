@@ -1,0 +1,472 @@
+@charset "UTF-8";
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Main styles */
+main {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/index/main_bg.webp);
+    background-size: cover;
+    background-position: top;
+
+    position: relative;
+}
+
+main::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(to right, rgba(29, 50, 70, 0.9) 0%, rgba(29, 50, 70, 0.5) 70%, rgba(29, 50, 70, 0) 100%);
+}
+
+main .inbox {
+    width: 90%;
+    max-width: 1620px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+main .main-intro {
+    position: absolute;
+    left: 0;
+    bottom: 16%;
+}
+
+main .main-intro h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: rgba(255, 255, 255, 1);
+}
+
+main .main-intro p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 36px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+main .main-intro a {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: all 0.5s;
+}
+
+main .main-intro a:hover {
+    background-color: rgb(255, 255, 255);
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+
+
+/* Section, article 공통 */
+section {
+    padding-top: 120px;
+    margin-bottom: 120px;
+}
+
+section>article {
+    width: var(--max-width);
+    /* 1280px */
+    margin: 0 auto;
+}
+
+
+/* Feature styles */
+article.why-us {
+    margin-bottom: 120px;
+}
+
+article.why-us .top {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+article.why-us .top .title {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+article.why-us .top .title span {
+    display: block;
+}
+
+article.why-us .top .title span:first-child {
+    font-size: 1rem;
+    color: var(--color-secondary);
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+}
+
+article.why-us .top .des {
+    color: #44474D;
+    font-size: 18px;
+}
+
+
+article.why-us .content {}
+
+article.why-us .content>div {
+    height: 280px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    float: left;
+    border-radius: 1rem;
+}
+
+
+/* .con-box$ common styles */
+article.why-us .content>div .icon {
+    margin-bottom: 24px;
+}
+
+article.why-us .content>div .title {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+article.why-us .content>div .des {
+    font-size: 1rem;
+    color: #43474C;
+    line-height: 1.5;
+}
+
+article.why-us .content>div .link {
+    margin-top: 16px;
+    font-size: 1rem;
+    color: var(--color-text-light);
+    display: inline-block;
+}
+
+article.why-us .content>div .link:hover {
+    text-decoration: underline;
+    color: var(--color-secondary);
+}
+
+/* .con-box$ styles */
+.con-box1 {
+    width: 66%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    background-color: rgb(255, 255, 255);
+    background-image: url(../images/index/zoom.webp);
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position: right;
+}
+
+.con-box2 {
+    width: 32%;
+    margin-bottom: 2%;
+    background-color: #F1F4F6;
+}
+
+.con-box3 {
+    width: 32%;
+    background-color: #F8FAFC;
+}
+
+.con-box4 {
+    width: 66%;
+    margin-left: 2%;
+    background-color: #1D3246;
+    position: relative;
+}
+
+.con-box4::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 200px;
+
+    background-image: url(../images/index/icon_bg.png);
+    background-repeat: no-repeat;
+
+    position: absolute;
+    right: -40px;
+    bottom: -62px;
+    transform: rotate(12deg);
+
+    opacity: 0.1;
+}
+
+
+/* .con-box4 styles */
+.con-box4 .inbox {
+    width: calc(100% - 60px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.con-box4 .title {
+    font-weight: 600;
+    margin-bottom: 8px !important;
+    color: rgb(255, 255, 255);
+}
+
+.con-box4 .des {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.con-box4 .channel {
+    margin-top: 24px;
+}
+
+.con-box4 .channel>div {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+}
+
+.con-box4 .channel>div h4 {
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+.con-box4 .channel>div.tel h4 {
+    color: #3B82F6;
+}
+
+.con-box4 .channel>div.email h4 {
+    color: #FF6B6B;
+}
+
+.con-box4 .channel>div p {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.con-box4 .channel>div p .small {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+    letter-spacing: 0.8px;
+}
+
+.con-box4 .channel>div.email p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.con-box4 .channel>div.email a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Course styles */
+article.course {}
+
+article.course .top {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+article.course .top .title {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+article.course .top .des {
+    color: #44474D;
+    font-size: 18px;
+}
+
+article.course .top .more-link {
+    color: #44474D;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+article.course .top .more-link:hover {
+    color: var(--color-secondary);
+    font-weight: 500;
+}
+
+article.course .content {}
+
+article.course .content .course-list {
+    display: flex;
+    gap: 4%;
+}
+
+article.course .content .course-list .course-card {
+    width: 48%;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #F8FAFC;
+    box-shadow: 0 4px 16px var(--color-shadow);
+}
+
+.course-card .card-img {
+    position: relative;
+}
+
+.course-card .card-img img {
+    width: 100%;
+}
+
+.course-card .card-img .tag-group {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+}
+
+.course-card .card-img span {
+    padding: 8px 18px;
+    font-size: 1rem;
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+/* tag 디자인 */
+.tag.new {
+    background-color: #fff;
+    color: var(--color-secondary);
+}
+
+.tag.popular {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.c2 .tag.popular {
+    background-color: var(--color-accent);
+}
+
+/* //tag디자인 */
+
+.course-card .card-body {
+    padding: 32px;
+}
+
+.course-card .card-body .category {
+    color: var(--color-secondary);
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.course-card.c2 .card-body .category {
+    color: var(--color-accent)
+}
+
+.course-card .card-body .category span {
+    margin-right: 8px;
+}
+
+.course-card .card-body .title {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.course-card .card-body .des {
+    font-size: 1.125rem;
+    color: #44474D;
+    margin-bottom: 24px;
+}
+
+.course-card .card-body .info {
+    border-top: 1px solid #ccc;
+    padding-top: 24px;
+}
+
+.course-card .card-body .info p {
+    color: #44474D;
+    color: #888;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.course-card .card-body .info p:first-child {
+    margin-right: 24px;
+}
+
+
+
+/* 교육문의 팝업 */
+#modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    display: none;
+}
+
+.popup {
+    width: 36%;
+    max-width: 500px;
+    background-color: var(--color-secondary);
+    border-radius: 12px;
+    overflow: hidden;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+.popup .top {
+    padding: 40px;
+
+    background-color: rgb(255, 255, 255);
+    color: #333;
+}
+
+.popup .top h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.popup .top p {
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.popup .top p strong {
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+.popup .bottom button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.125rem;
+    color: rgb(255, 255, 255);
+    width: 100%;
+
+    padding: 15px 0;
+    cursor: pointer;
+}

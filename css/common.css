@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@import url(font/pretendard.css);
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* Common styles and variables */
+
+/* CSS variables for colors and typography */
+:root {
+  --color-primary: #3B82F6;
+  --color-secondary: #0D9AFF;
+  --color-navy: #2c40b1;
+  --color-accent: #FF6B6B;
+  --color-light: #fafafa;
+  --color-dark: #0f173a;
+
+  --color-text: #222;
+  --color-text-gray: #555;
+  --color-text-light: #999;
+  --color-background: #eee;
+  --color-text-index: #64748B;
+
+  --color-muted: #6c779b;
+  --color-border: #e5e8f1;
+  --color-shadow: rgba(204, 204, 204, 0.6);
+
+  --font-family-base: 'Pretendard', sans-serif;
+  --max-width: 1280px;
+}
+/* --wide-width: 1620px; 전체너비에서 양쪽 150px 여백 사용 */
+
+body {
+  font-family: var(--font-family-base);
+  color: var(--color-text);
+  font-weight: 400;
+}
+
+/* Inner container used to center content */
+.inner {
+  width: 86%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Clearfix helper */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Button 공통디자인 */
+.btn {
+  display: inline-block;
+  padding: 1rem 2.4rem;
+  border-radius: 0.6rem;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  font-size: 1rem;
+}
+
+/* 서브페이지 섹션 공통 사항 */
+
+/* 서브 상단(.sub-top) 공통 디자인*/
+
+/* page-title 너비는 header에 맞춰 동일하게 설정 */
+section.sub-top .page-title {
+  width: 86%;
+  max-width: 1620px;
+  margin: 0 auto;
+  /* padding: 100px 0; */
+  padding: 80px 0;
+}
+
+section.sub-top .page-title .en-title {
+  font-family: "Alexandria", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  /* margin-bottom: 24px; */
+  margin-bottom: 16px;
+  color: var(--color-secondary);
+}
+
+section.sub-top .page-title .ko-title {
+  /* font-size: 3.2rem; */
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+
+section.sub-top .page-des {
+  width: 100%;
+  /* height: 360px; */
+  height: 300px;
+
+  position: relative;
+}
+
+section.sub-top .page-des::before {
+  content: "";
+  display: block;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section.sub-top .page-des p {
+  width: 86%;
+  max-width: 1620px;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 25%;
+
+  /* font-size: 2.2rem; */
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #fff;
+}
+
+
+/* Content 섹션 공통 너비 설정 */
+section.content {
+  /* width: 100%;
+  padding: 0 150px; 
+  box-sizing: border-box; */
+
+  width: 90%;
+  max-width: 1620px;
+  /* 양쪽 여백 150px 고려 */
+  margin: 140px auto 160px;
+
+  /* background-color: lightgoldenrodyellow;
+  outline: 1px solid red; */
+}
